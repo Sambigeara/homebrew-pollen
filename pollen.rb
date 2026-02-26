@@ -5,20 +5,20 @@
 class Pollen < Formula
   desc "Mesh network daemon"
   homepage ""
-  version "0.1.0-alpha.12"
+  version "0.1.0-alpha.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.12/pollen_0.1.0-alpha.12_darwin_amd64.tar.gz"
-      sha256 "1fc545541aacc2187ab87a38b8aba34179ea294e25bcd8c4fbb9eadbb9b6e81e"
+      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.13/pollen_0.1.0-alpha.13_darwin_amd64.tar.gz"
+      sha256 "0707f8e22fe880088f6a335aac01930560ccf268700f537b0b8cf8ac33d6c4ab"
 
       define_method(:install) do
         bin.install "pollen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.12/pollen_0.1.0-alpha.12_darwin_arm64.tar.gz"
-      sha256 "a200fa23cfe82b97fc884a67693ead19f6bb2bbd9e2f93441953e2af6cb6184e"
+      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.13/pollen_0.1.0-alpha.13_darwin_arm64.tar.gz"
+      sha256 "f17f5e8688ac6555d417fbde5a2e5120a689054ab16c82a1796ab56f341e4865"
 
       define_method(:install) do
         bin.install "pollen"
@@ -28,15 +28,15 @@ class Pollen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.12/pollen_0.1.0-alpha.12_linux_amd64.tar.gz"
-      sha256 "a4bafb77ebc511108e46e34f231804308f79eb4b65fc4c48c2d4883692395d4e"
+      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.13/pollen_0.1.0-alpha.13_linux_amd64.tar.gz"
+      sha256 "9342ad069a2f5cd8c63d80871c660be8f9358953c222631a53cf8ff16afe6cb2"
       define_method(:install) do
         bin.install "pollen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.12/pollen_0.1.0-alpha.12_linux_arm64.tar.gz"
-      sha256 "9eed415ad7baf42070f0539506648949a7f44c787d328240895665aeec690e76"
+      url "https://github.com/Sambigeara/pollen/releases/download/v0.1.0-alpha.13/pollen_0.1.0-alpha.13_linux_arm64.tar.gz"
+      sha256 "db98db00fe2ca7708588be79cb5ea3d8363a69773e566957bef81ceafa582439"
       define_method(:install) do
         bin.install "pollen"
       end
